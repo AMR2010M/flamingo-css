@@ -1056,3 +1056,501 @@ flex-direction: column;
   border-radius: 8px;
   padding: 12px;
 }
+/* Flamingo CSS: 100 Attribute-based Background Colors (no text color override) */
+
+/* Basic colors */
+[red]       { background: #ff1744 !important; }
+[pink]      { background: #ff6fd8 !important; }
+[purple]    { background: #8e24aa !important; }
+[deep-purple]{ background: #673ab7 !important; }
+[indigo]    { background: #3f51b5 !important; }
+[blue]      { background: #2196f3 !important; }
+[light-blue]{ background: #03a9f4 !important; }
+[cyan]      { background: #00bcd4 !important; }
+[teal]      { background: #009688 !important; }
+[green]     { background: #43e97b !important; }
+[light-green]{ background: #8bc34a !important; }
+[lime]      { background: #cddc39 !important; }
+[yellow]    { background: #ffd600 !important; }
+[amber]     { background: #ffc107 !important; }
+[orange]    { background: #ff9800 !important; }
+[deep-orange]{ background: #ff5722 !important; }
+[brown]     { background: #795548 !important; }
+[gray]      { background: #bdbdbd !important; }
+[blue-gray] { background: #607d8b !important; }
+[black]     { background: #22223b !important; }
+[white]     { background: #fff !important; }
+[light]     { background: #f8f7ff !important; }
+[dark]      { background: #22223b !important; }
+
+/* Red shades */
+[red-50]    { background: #ffebee !important; }
+[red-100]   { background: #ffcdd2 !important; }
+[red-200]   { background: #ef9a9a !important; }
+[red-300]   { background: #e57373 !important; }
+[red-400]   { background: #ef5350 !important; }
+[red-500]   { background: #f44336 !important; }
+[red-600]   { background: #e53935 !important; }
+[red-700]   { background: #d32f2f !important; }
+[red-800]   { background: #c62828 !important; }
+[red-900]   { background: #b71c1c !important; }
+
+/* Blue shades */
+[blue-50]   { background: #e3f2fd !important; }
+[blue-100]  { background: #bbdefb !important; }
+[blue-200]  { background: #90caf9 !important; }
+[blue-300]  { background: #64b5f6 !important; }
+[blue-400]  { background: #42a5f5 !important; }
+[blue-500]  { background: #2196f3 !important; }
+[blue-600]  { background: #1e88e5 !important; }
+[blue-700]  { background: #1976d2 !important; }
+[blue-800]  { background: #1565c0 !important; }
+[blue-900]  { background: #0d47a1 !important; }
+
+/* Green shades */
+[green-50]  { background: #e8f5e9 !important; }
+[green-100] { background: #c8e6c9 !important; }
+[green-200] { background: #a5d6a7 !important; }
+[green-300] { background: #81c784 !important; }
+[green-400] { background: #66bb6a !important; }
+[green-500] { background: #43e97b !important; }
+[green-600] { background: #388e3c !important; }
+[green-700] { background: #2e7d32 !important; }
+[green-800] { background: #1b5e20 !important; }
+[green-900] { background: #0d3b22 !important; }
+
+/* Yellow shades */
+[yellow-50]  { background: #fffde7 !important; }
+[yellow-100] { background: #fff9c4 !important; }
+[yellow-200] { background: #fff59d !important; }
+[yellow-300] { background: #fff176 !important; }
+[yellow-400] { background: #ffee58 !important; }
+[yellow-500] { background: #ffd600 !important; }
+[yellow-600] { background: #ffea00 !important; }
+[yellow-700] { background: #ffd600 !important; }
+[yellow-800] { background: #ffab00 !important; }
+[yellow-900] { background: #ff6f00 !important; }
+
+/* Purple shades */
+[purple-50]  { background: #f3e5f5 !important; }
+[purple-100] { background: #e1bee7 !important; }
+[purple-200] { background: #ce93d8 !important; }
+[purple-300] { background: #ba68c8 !important; }
+[purple-400] { background: #ab47bc !important; }
+[purple-500] { background: #8e24aa !important; }
+[purple-600] { background: #7b1fa2 !important; }
+[purple-700] { background: #6a1b9a !important; }
+[purple-800] { background: #4a148c !important; }
+[purple-900] { background: #38006b !important; }
+
+/* Gray shades */
+[gray-50]    { background: #fafafa !important; }
+[gray-100]   { background: #f5f5f5 !important; }
+[gray-200]   { background: #eeeeee !important; }
+[gray-300]   { background: #e0e0e0 !important; }
+[gray-400]   { background: #bdbdbd !important; }
+[gray-500]   { background: #9e9e9e !important; }
+[gray-600]   { background: #757575 !important; }
+[gray-700]   { background: #616161 !important; }
+[gray-800]   { background: #424242 !important; }
+[gray-900]   { background: #22223b !important; }
+/* Flamingo CSS: 100 Attribute-based Text Colors (t{color}) */
+
+[tred]        { color: #ff1744 !important; }
+[tpink]       { color: #ff6fd8 !important; }
+[tpurple]     { color: #8e24aa !important; }
+[tdeep-purple]{ color: #673ab7 !important; }
+[tindigo]     { color: #3f51b5 !important; }
+[tblue]       { color: #2196f3 !important; }
+[tlight-blue] { color: #03a9f4 !important; }
+[tcyan]       { color: #00bcd4 !important; }
+[tteal]       { color: #009688 !important; }
+[tgreen]      { color: #43e97b !important; }
+[tlight-green]{ color: #8bc34a !important; }
+[tlime]       { color: #cddc39 !important; }
+[tyellow]     { color: #ffd600 !important; }
+[tamber]      { color: #ffc107 !important; }
+[torange]     { color: #ff9800 !important; }
+[tdeep-orange]{ color: #ff5722 !important; }
+[tbrown]      { color: #795548 !important; }
+[tgray]       { color: #bdbdbd !important; }
+[tblue-gray]  { color: #607d8b !important; }
+[tblack]      { color: #22223b !important; }
+[twhite]      { color: #fff !important; }
+[tlight]      { color: #f8f7ff !important; }
+[tdark]       { color: #22223b !important; }
+
+/* Red shades */
+[tred-50]    { color: #ffebee !important; }
+[tred-100]   { color: #ffcdd2 !important; }
+[tred-200]   { color: #ef9a9a !important; }
+[tred-300]   { color: #e57373 !important; }
+[tred-400]   { color: #ef5350 !important; }
+[tred-500]   { color: #f44336 !important; }
+[tred-600]   { color: #e53935 !important; }
+[tred-700]   { color: #d32f2f !important; }
+[tred-800]   { color: #c62828 !important; }
+[tred-900]   { color: #b71c1c !important; }
+
+/* Blue shades */
+[tblue-50]   { color: #e3f2fd !important; }
+[tblue-100]  { color: #bbdefb !important; }
+[tblue-200]  { color: #90caf9 !important; }
+[tblue-300]  { color: #64b5f6 !important; }
+[tblue-400]  { color: #42a5f5 !important; }
+[tblue-500]  { color: #2196f3 !important; }
+[tblue-600]  { color: #1e88e5 !important; }
+[tblue-700]  { color: #1976d2 !important; }
+[tblue-800]  { color: #1565c0 !important; }
+[tblue-900]  { color: #0d47a1 !important; }
+
+/* Green shades */
+[tgreen-50]  { color: #e8f5e9 !important; }
+[tgreen-100] { color: #c8e6c9 !important; }
+[tgreen-200] { color: #a5d6a7 !important; }
+[tgreen-300] { color: #81c784 !important; }
+[tgreen-400] { color: #66bb6a !important; }
+[tgreen-500] { color: #43e97b !important; }
+[tgreen-600] { color: #388e3c !important; }
+[tgreen-700] { color: #2e7d32 !important; }
+[tgreen-800] { color: #1b5e20 !important; }
+[tgreen-900] { color: #0d3b22 !important; }
+
+/* Yellow shades */
+[tyellow-50]  { color: #fffde7 !important; }
+[tyellow-100] { color: #fff9c4 !important; }
+[tyellow-200] { color: #fff59d !important; }
+[tyellow-300] { color: #fff176 !important; }
+[tyellow-400] { color: #ffee58 !important; }
+[tyellow-500] { color: #ffd600 !important; }
+[tyellow-600] { color: #ffea00 !important; }
+[tyellow-700] { color: #ffd600 !important; }
+[tyellow-800] { color: #ffab00 !important; }
+[tyellow-900] { color: #ff6f00 !important; }
+
+/* Purple shades */
+[tpurple-50]  { color: #f3e5f5 !important; }
+[tpurple-100] { color: #e1bee7 !important; }
+[tpurple-200] { color: #ce93d8 !important; }
+[tpurple-300] { color: #ba68c8 !important; }
+[tpurple-400] { color: #ab47bc !important; }
+[tpurple-500] { color: #8e24aa !important; }
+[tpurple-600] { color: #7b1fa2 !important; }
+[tpurple-700] { color: #6a1b9a !important; }
+[tpurple-800] { color: #4a148c !important; }
+[tpurple-900] { color: #38006b !important; }
+
+/* Gray shades */
+[tgray-50]    { color: #fafafa !important; }
+[tgray-100]   { color: #f5f5f5 !important; }
+[tgray-200]   { color: #eeeeee !important; }
+[tgray-300]   { color: #e0e0e0 !important; }
+[tgray-400]   { color: #bdbdbd !important; }
+[tgray-500]   { color: #9e9e9e !important; }
+[tgray-600]   { color: #757575 !important; }
+[tgray-700]   { color: #616161 !important; }
+[tgray-800]   { color: #424242 !important; }
+[tgray-900]   { color: #22223b !important; }
+/* Animated background color change every 1s */
+[coloring] {
+  animation: coloring 1s linear infinite;
+}
+/* 50 animated palettes: [coloring-1] to [coloring-50], each with 3 colors */
+
+[coloring-1]  { animation: coloring-1 3s linear infinite; }
+[coloring-2]  { animation: coloring-2 3s linear infinite; }
+[coloring-3]  { animation: coloring-3 3s linear infinite; }
+[coloring-4]  { animation: coloring-4 3s linear infinite; }
+[coloring-5]  { animation: coloring-5 3s linear infinite; }
+[coloring-6]  { animation: coloring-6 3s linear infinite; }
+[coloring-7]  { animation: coloring-7 3s linear infinite; }
+[coloring-8]  { animation: coloring-8 3s linear infinite; }
+[coloring-9]  { animation: coloring-9 3s linear infinite; }
+[coloring-10] { animation: coloring-10 3s linear infinite; }
+[coloring-11] { animation: coloring-11 3s linear infinite; }
+[coloring-12] { animation: coloring-12 3s linear infinite; }
+[coloring-13] { animation: coloring-13 3s linear infinite; }
+[coloring-14] { animation: coloring-14 3s linear infinite; }
+[coloring-15] { animation: coloring-15 3s linear infinite; }
+[coloring-16] { animation: coloring-16 3s linear infinite; }
+[coloring-17] { animation: coloring-17 3s linear infinite; }
+[coloring-18] { animation: coloring-18 3s linear infinite; }
+[coloring-19] { animation: coloring-19 3s linear infinite; }
+[coloring-20] { animation: coloring-20 3s linear infinite; }
+[coloring-21] { animation: coloring-21 3s linear infinite; }
+[coloring-22] { animation: coloring-22 3s linear infinite; }
+[coloring-23] { animation: coloring-23 3s linear infinite; }
+[coloring-24] { animation: coloring-24 3s linear infinite; }
+[coloring-25] { animation: coloring-25 3s linear infinite; }
+[coloring-26] { animation: coloring-26 3s linear infinite; }
+[coloring-27] { animation: coloring-27 3s linear infinite; }
+[coloring-28] { animation: coloring-28 3s linear infinite; }
+[coloring-29] { animation: coloring-29 3s linear infinite; }
+[coloring-30] { animation: coloring-30 3s linear infinite; }
+[coloring-31] { animation: coloring-31 3s linear infinite; }
+[coloring-32] { animation: coloring-32 3s linear infinite; }
+[coloring-33] { animation: coloring-33 3s linear infinite; }
+[coloring-34] { animation: coloring-34 3s linear infinite; }
+[coloring-35] { animation: coloring-35 3s linear infinite; }
+[coloring-36] { animation: coloring-36 3s linear infinite; }
+[coloring-37] { animation: coloring-37 3s linear infinite; }
+[coloring-38] { animation: coloring-38 3s linear infinite; }
+[coloring-39] { animation: coloring-39 3s linear infinite; }
+[coloring-40] { animation: coloring-40 3s linear infinite; }
+[coloring-41] { animation: coloring-41 3s linear infinite; }
+[coloring-42] { animation: coloring-42 3s linear infinite; }
+[coloring-43] { animation: coloring-43 3s linear infinite; }
+[coloring-44] { animation: coloring-44 3s linear infinite; }
+[coloring-45] { animation: coloring-45 3s linear infinite; }
+[coloring-46] { animation: coloring-46 3s linear infinite; }
+[coloring-47] { animation: coloring-47 3s linear infinite; }
+[coloring-48] { animation: coloring-48 3s linear infinite; }
+[coloring-49] { animation: coloring-49 3s linear infinite; }
+[coloring-50] { animation: coloring-50 3s linear infinite; }
+
+@keyframes coloring-1  { 0%{background:#ff00b74f;} 50%{background:#c800ff33;} 100%{background:#ffffff;} }
+@keyframes coloring-2  { 0%{background:#43e97b;} 50%{background:#ffd600;} 100%{background:#ff9800;} }
+@keyframes coloring-3  { 0%{background:#ff1744;} 50%{background:#00bcd4;} 100%{background:#b491ff;} }
+@keyframes coloring-4  { 0%{background:#ff6fd8;} 50%{background:#03a9f4;} 100%{background:#00e5ff;} }
+@keyframes coloring-5  { 0%{background:#8bc34a;} 50%{background:#cddc39;} 100%{background:#ffc107;} }
+@keyframes coloring-6  { 0%{background:#ff5722;} 50%{background:#795548;} 100%{background:#bdbdbd;} }
+@keyframes coloring-7  { 0%{background:#607d8b;} 50%{background:#22223b;} 100%{background:#fff;} }
+@keyframes coloring-8  { 0%{background:#f8f7ff;} 50%{background:#e3f2fd;} 100%{background:#bbdefb;} }
+@keyframes coloring-9  { 0%{background:#90caf9;} 50%{background:#64b5f6;} 100%{background:#42a5f5;} }
+@keyframes coloring-10 { 0%{background:#1e88e5;} 50%{background:#1976d2;} 100%{background:#1565c0;} }
+@keyframes coloring-11 { 0%{background:#0d47a1;} 50%{background:#e8f5e9;} 100%{background:#c8e6c9;} }
+@keyframes coloring-12 { 0%{background:#a5d6a7;} 50%{background:#81c784;} 100%{background:#66bb6a;} }
+@keyframes coloring-13 { 0%{background:#388e3c;} 50%{background:#2e7d32;} 100%{background:#1b5e20;} }
+@keyframes coloring-14 { 0%{background:#0d3b22;} 50%{background:#fffde7;} 100%{background:#fff9c4;} }
+@keyframes coloring-15 { 0%{background:#fff59d;} 50%{background:#fff176;} 100%{background:#ffee58;} }
+@keyframes coloring-16 { 0%{background:#ffea00;} 50%{background:#ffab00;} 100%{background:#ff6f00;} }
+@keyframes coloring-17 { 0%{background:#f3e5f5;} 50%{background:#e1bee7;} 100%{background:#ce93d8;} }
+@keyframes coloring-18 { 0%{background:#ba68c8;} 50%{background:#ab47bc;} 100%{background:#8e24aa;} }
+@keyframes coloring-19 { 0%{background:#7b1fa2;} 50%{background:#6a1b9a;} 100%{background:#4a148c;} }
+@keyframes coloring-20 { 0%{background:#38006b;} 50%{background:#fafafa;} 100%{background:#f5f5f5;} }
+@keyframes coloring-21 { 0%{background:#eeeeee;} 50%{background:#e0e0e0;} 100%{background:#bdbdbd;} }
+@keyframes coloring-22 { 0%{background:#9e9e9e;} 50%{background:#757575;} 100%{background:#616161;} }
+@keyframes coloring-23 { 0%{background:#424242;} 50%{background:#22223b;} 100%{background:#ffb074;} }
+@keyframes coloring-24 { 0%{background:#ff7f50;} 50%{background:#98ff98;} 100%{background:#87ceeb;} }
+@keyframes coloring-25 { 0%{background:#ff007f;} 50%{background:#dda0dd;} 100%{background:#f4e2d8;} }
+@keyframes coloring-26 { 0%{background:#fff44f;} 50%{background:#228b22;} 100%{background:#006994;} }
+@keyframes coloring-27 { 0%{background:#722f37;} 50%{background:#d2691e;} 100%{background:#ffdb58;} }
+@keyframes coloring-28 { 0%{background:#e0f7fa;} 50%{background:#e6e6fa;} 100%{background:#dc143c;} }
+@keyframes coloring-29 { 0%{background:#007fff;} 50%{background:#36454f;} 100%{background:#f5f5dc;} }
+@keyframes coloring-30 { 0%{background:#fbceb1;} 50%{background:#708090;} 100%{background:#cd7f32;} }
+@keyframes coloring-31 { 0%{background:#b66a50;} 50%{background:#fc8eac;} 100%{background:#ff00b7;} }
+@keyframes coloring-32 { 0%{background:#8e24aa;} 50%{background:#2196f3;} 100%{background:#43e97b;} }
+@keyframes coloring-33 { 0%{background:#ffd600;} 50%{background:#ff9800;} 100%{background:#ff1744;} }
+@keyframes coloring-34 { 0%{background:#00bcd4;} 50%{background:#b491ff;} 100%{background:#ff6fd8;} }
+@keyframes coloring-35 { 0%{background:#03a9f4;} 50%{background:#00e5ff;} 100%{background:#8bc34a;} }
+@keyframes coloring-36 { 0%{background:#cddc39;} 50%{background:#ffc107;} 100%{background:#ff5722;} }
+@keyframes coloring-37 { 0%{background:#795548;} 50%{background:#bdbdbd;} 100%{background:#607d8b;} }
+@keyframes coloring-38 { 0%{background:#22223b;} 50%{background:#fff;} 100%{background:#f8f7ff;} }
+@keyframes coloring-39 { 0%{background:#e3f2fd;} 50%{background:#bbdefb;} 100%{background:#90caf9;} }
+@keyframes coloring-40 { 0%{background:#64b5f6;} 50%{background:#42a5f5;} 100%{background:#1e88e5;} }
+@keyframes coloring-41 { 0%{background:#1976d2;} 50%{background:#1565c0;} 100%{background:#0d47a1;} }
+@keyframes coloring-42 { 0%{background:#e8f5e9;} 50%{background:#c8e6c9;} 100%{background:#a5d6a7;} }
+@keyframes coloring-43 { 0%{background:#81c784;} 50%{background:#66bb6a;} 100%{background:#388e3c;} }
+@keyframes coloring-44 { 0%{background:#2e7d32;} 50%{background:#1b5e20;} 100%{background:#0d3b22;} }
+@keyframes coloring-45 { 0%{background:#fffde7;} 50%{background:#fff9c4;} 100%{background:#fff59d;} }
+@keyframes coloring-46 { 0%{background:#fff176;} 50%{background:#ffee58;} 100%{background:#ffea00;} }
+@keyframes coloring-47 { 0%{background:#ffab00;} 50%{background:#ff6f00;} 100%{background:#f3e5f5;} }
+@keyframes coloring-48 { 0%{background:#e1bee7;} 50%{background:#ce93d8;} 100%{background:#ba68c8;} }
+@keyframes coloring-49 { 0%{background:#ab47bc;} 50%{background:#8e24aa;} 100%{background:#7b1fa2;} }
+@keyframes coloring-50 { 0%{background:#6a1b9a;} 50%{background:#4a148c;} 100%{background:#38006b;} }
+/* 50 animated glowing balls: [ball-move-1] to [ball-move-50] */
+/* Each ball has a unique path, color, and speed. Example for 5, expand as needed. */
+
+[ball-move-1]::before {
+  content: "";
+  position: absolute;
+  width: 90px; height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff6fd8 0%, #8e24aa 60%, #2196f3 100%);
+  box-shadow: 0 0 40px 20px #ff6fd888, 0 0 80px 40px #2196f355;
+  opacity: 0.7;
+  pointer-events: none;
+  animation: ball-move-1 7s linear infinite alternate;
+  z-index: 0;
+}
+@keyframes ball-move-1 {
+  0%   { top: 10%; left: 5%; }
+  30%  { top: 20%; left: 70%; }
+  60%  { top: 70%; left: 80%; }
+  100% { top: 10%; left: 5%; }
+}
+
+[ball-move-2]::before {
+  content: "";
+  position: absolute;
+  width: 70px; height: 70px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #2196f3 0%, #b491ff 60%, #ff6fd8 100%);
+  box-shadow: 0 0 30px 15px #2196f388, 0 0 60px 30px #ff6fd855;
+  opacity: 0.6;
+  pointer-events: none;
+  animation: ball-move-2 8s linear infinite alternate;
+  z-index: 0;
+}
+@keyframes ball-move-2 {
+  0%   { top: 60%; left: 10%; }
+  40%  { top: 10%; left: 80%; }
+  80%  { top: 80%; left: 60%; }
+  100% { top: 60%; left: 10%; }
+}
+
+[ball-move-3]::before {
+  content: "";
+  position: absolute;
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #8e24aa 0%, #ff6fd8 60%, #2196f3 100%);
+  box-shadow: 0 0 50px 25px #8e24aa88, 0 0 100px 50px #2196f355;
+  opacity: 0.5;
+  pointer-events: none;
+  animation: ball-move-3 9s linear infinite alternate;
+  z-index: 0;
+}
+@keyframes ball-move-3 {
+  0%   { top: 30%; left: 80%; }
+  25%  { top: 70%; left: 50%; }
+  75%  { top: 10%; left: 20%; }
+  100% { top: 30%; left: 80%; }
+}
+
+[ball-move-4]::before {
+  content: "";
+  position: absolute;
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #2196f3 0%, #ff6fd8 60%, #8e24aa 100%);
+  box-shadow: 0 0 20px 10px #2196f388, 0 0 40px 20px #ff6fd855;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: ball-move-4 6s linear infinite alternate;
+  z-index: 0;
+}
+@keyframes ball-move-4 {
+  0%   { top: 80%; left: 70%; }
+  50%  { top: 20%; left: 30%; }
+  100% { top: 80%; left: 70%; }
+}
+
+[ball-move-5]::before {
+  content: "";
+  position: absolute;
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff6fd8 0%, #2196f3 60%, #8e24aa 100%);
+  box-shadow: 0 0 60px 30px #ff6fd888, 0 0 120px 60px #2196f355;
+  opacity: 0.4;
+  pointer-events: none;
+  animation: ball-move-5 10s linear infinite alternate;
+  z-index: 0;
+}
+@keyframes ball-move-5 {
+  0%   { top: 50%; left: 40%; }
+  20%  { top: 10%; left: 90%; }
+  80%  { top: 90%; left: 10%; }
+  100% { top: 50%; left: 40%; }
+}
+
+/* ...repeat up to ball-move-50 with different paths, sizes, and speeds... */
+/* Birthday paper/confetti animation: [birthday-paper] */
+
+[birthday-paper] {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+[birthday-paper]::before,
+[birthday-paper]::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  top: 0; left: 0;
+  z-index: 0;
+  background: none;
+}
+
+[birthday-paper]::before {
+  animation: birthday-paper-fall 3s linear infinite;
+  background:
+    radial-gradient(circle, #ff6fd8 70%, transparent 71%) 10% -10%/18px 18px no-repeat,
+    radial-gradient(circle, #ffd600 70%, transparent 71%) 30% -30%/16px 16px no-repeat,
+    radial-gradient(circle, #2196f3 70%, transparent 71%) 50% -20%/20px 20px no-repeat,
+    radial-gradient(circle, #8e24aa 70%, transparent 71%) 70% -25%/14px 14px no-repeat,
+    radial-gradient(circle, #43e97b 70%, transparent 71%) 90% -15%/15px 15px no-repeat;
+  opacity: 0.7;
+}
+
+[birthday-paper]::after {
+  animation: birthday-paper-fall2 3.5s linear infinite;
+  background:
+    radial-gradient(circle, #ff9800 70%, transparent 71%) 20% -30%/14px 14px no-repeat,
+    radial-gradient(circle, #b491ff 70%, transparent 71%) 40% -10%/18px 18px no-repeat,
+    radial-gradient(circle, #ffc107 70%, transparent 71%) 60% -25%/16px 16px no-repeat,
+    radial-gradient(circle, #00bcd4 70%, transparent 71%) 80% -20%/20px 20px no-repeat,
+    radial-gradient(circle, #ff1744 70%, transparent 71%) 95% -35%/15px 15px no-repeat;
+  opacity: 0.7;
+}
+
+@keyframes birthday-paper-fall {
+  0%   { background-position:
+    10% -10%, 30% -30%, 50% -20%, 70% -25%, 90% -15%; }
+  100% { background-position:
+    10% 110%, 30% 130%, 50% 120%, 70% 125%, 90% 115%; }
+}
+@keyframes birthday-paper-fall2 {
+  0%   { background-position:
+    20% -30%, 40% -10%, 60% -25%, 80% -20%, 95% -35%; }
+  100% { background-position:
+    20% 130%, 40% 110%, 60% 125%, 80% 120%, 95% 135%; }
+}
+/* Light focus/spotlight animation: [lightfouce] */
+
+[lightfouce] {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: #fff;
+}
+
+[lightfouce]::before {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, #fffbe9 0%, #ffe3fa 40%, #ffb7ff00 80%);
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  pointer-events: none;
+  animation: lightfouce-move 3.5s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes lightfouce-move {
+  0%   { top: 55%; left: 45%; opacity: 0.7;}
+  40%  { top: 48%; left: 60%; opacity: 0.9;}
+  60%  { top: 52%; left: 40%; opacity: 0.8;}
+  100% { top: 50%; left: 55%; opacity: 0.7;}
+}
+/* Hand-drawn/sketchy effect: [handdrawn] */
+
+[handdrawn] {
+  filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="sketchy"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" result="turb"/><feDisplacementMap in2="turb" in="SourceGraphic" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter></svg>#sketchy');
+  border: 2.5px solid #3d0066;
+  border-radius: 0.7em;
+  background: #fffbe9;
+  box-shadow: 0 2px 12px #ff00b733, 0 1px 0 #ffd600 inset;
+  font-family: 'Caveat', 'Comic Sans MS', cursive, sans-serif;
+  transition: filter 0.3s, box-shadow 0.3s;
+}
+
+[handdrawn]:hover {
+  filter: none;
+  box-shadow: 0 4px 24px #ff00b744, 0 2px 0 #ffd600 inset;
+}
