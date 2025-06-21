@@ -29,3 +29,8 @@ border: 2px solid #9d00ff;
   
 
 }
+@media(max-width: 600px) {
+  .main{
+    background-image: none;
+  }
+}
