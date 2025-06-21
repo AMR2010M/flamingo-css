@@ -1,5 +1,5 @@
 .alive div{
-    background-color: rgb(132, 197, 255);
+    background-color: rgb(255, 132, 230);
     border-radius: 8px;
     width: 250px;
     height: 250px;
@@ -18,11 +18,11 @@ border: 2px solid #9d00ff;
 .pcr{
 
      background-color: #ffffff;
-  font-size: 20px;
-  color: #9d00ff;
-border: 2px solid #9d00ff;
+  font-size: 30px;
+  color: #7700ff;
+border: 2px solid #ff00b7;
   width: 80px;
-  height: 50x;
+  height: 60pxx;
   border-radius: 8px;
   padding: 12px;
    margin-left: 10px;
