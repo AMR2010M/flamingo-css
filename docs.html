@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flamingo CSS Docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="float.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      font-family: 'Cairo', Arial, sans-serif;
+      background: linear-gradient(120deg, #f8f7ff 60%, #e0d7ff 100%);
+      color: #3d0066;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: linear-gradient(90deg, #6600ff 60%, #b491ff 100%);
+      color: #fff;
+      padding: 2.5rem 0 1.5rem 0;
+      text-align: center;
+      box-shadow: 0 4px 24px #6600ff22;
+      border-radius: 0 0 2rem 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    header h3 {
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+    .docs-layout {
+      display: flex;
+      min-height: 80vh;
+      max-width: 1400px;
+      margin: 2rem auto 0 auto;
+      width: 100%;
+      gap: 2rem;
+    }
+    nav {
+      min-width: 220px;
+      max-width: 220px;
+      background: #f3eaff;
+      padding: 2rem 1rem;
+      border-radius: 1.5em;
+      box-shadow: 0 2px 16px #b491ff33;
+      font-size: 1.1rem;
+      position: sticky;
+      top: 2rem;
+      height: fit-content;
+      align-self: flex-start;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      margin-bottom: 1.2em;
+    }
+    nav a {
+      color: #6600ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+      border-radius: 6px;
+      padding: 0.2em 0.5em;
+      display: block;
+    }
+    nav a:hover, nav a.active {
+      background: #e0d7ff;
+      color: #3d0066;
+    }
+    .container {
+      flex: 1;
+      max-width: 900px;
+      background: #fff;
+      border-radius: 1.5em;
+      box-shadow: 0 4px 32px #6600ff22;
+      padding: 2.5em 2em 2em 2em;
+      margin-bottom: 2rem;
+      min-width: 0;
+    }
+    h2 {
+      color: #6600ff;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    h3 {
+      color: #3d0066;
+      margin-top: 1.5rem;
+      margin-bottom: 0.7rem;
+      font-size: 1.3rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 1rem;
+      background: #f8f7ff;
+      border-radius: 0.7em;
+      overflow: hidden;
+      box-shadow: 0 2px 12px #b491ff22;
+    }
+    th, td {
+      border: 1px solid #eee;
+      padding: 0.5em 1em;
+      text-align: left;
+    }
+    th {
+      background: #f3eaff;
+      color: #6600ff;
+      font-weight: 700;
+    }
+    code {
+      background: #f3eaff;
+      border-radius: 0.3em;
+      padding: 0.2em 0.5em;
+      font-size: 1em;
+      color: #6600ff;
+    }
+    pre {
+      background: #f3eaff;
+      padding: 1em;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 1em 0;
+      font-size: 1.05em;
+    }
+    .demo-row {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    .demo-row > * {
+      min-width: 100px;
+      max-width: 180px;
+      margin-bottom: 1rem;
+    }
+    button[btn] {
+      font-size: 1.1em;
+      padding: 0.7em 2em;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 0.5em;
+      margin-right: 0.5em;
+      cursor: pointer;
+      box-shadow: 0 2px 8px #6600ff22;
+      transition: transform 0.15s;
+    }
+    .element-demo {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .element-demo > div, .element-demo > button {
+      min-width: 80px;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #fff;
+      font-size: 1.1em;
+      box-shadow: 0 2px 12px #b491ff22;
+    }
+    footer {
+      background: linear-gradient(90deg, #6600ff 60%, #b491ff 100%);
+      color: #fff;
+      text-align: center;
+      margin-top: auto;
+      padding: 2rem 0 1rem 0;
+      border-radius: 2rem 2rem 0 0;
+      box-shadow: 0 -2px 24px #6600ff22;
+    }
+    footer h2 {
+      opacity: 0.7;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    footer p, footer div {
+      opacity: 0.9;
+      font-size: 1.1rem;
+    }
+    @media (max-width: 1100px) {
+      .docs-layout {
+        flex-direction: column;
+        gap: 0;
+      }
+      nav {
+        margin-bottom: 2rem;
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 1.5em;
+      }
+      .container {
+        margin: 0 auto 2rem auto;
+      }
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding: 1em 0.5em;
+      }
+      header {
+        padding: 1.5rem 0 1rem 0;
+      }
+      nav {
+        padding: 1rem 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Flamingo CSS</h1>
+    <h3>Attribute-based CSS framework — Style with pure attributes</h3>
+    <p>+250 ready to use CSS attributes</p>
+  </header>
+  <div class="docs-layout">
+    <!-- Side Menu Start -->
+    <nav>
+      <ul>
+        <li><a href="#quickstart">🚀 Quick Start</a></li>
+        <li><a href="#usage">🧩 Usage Example</a></li>
+        <li><a href="#shapes">Shapes</a></li>
+        <li><a href="#animations">Animations</a></li>
+        <li><a href="#gradients">Gradients</a></li>
+        <li><a href="#hover">Hover Effects</a></li>
+        <li><a href="#rotations">Rotations</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#flex">Flex & Layout</a></li>
+        <li><a href="#combine">Combine Attributes</a></li>
+        <li><a href="#license">License</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <!-- Side Menu End -->
+
+    <div class="container">
+      <h2 id="quickstart">🚀 Quick Start</h2>
+      <ol>
+        <li>Download <code>float.css</code> and link it in your <code>&lt;head&gt;</code>:</li>
+      </ol>
+      <pre><code>&lt;link rel="stylesheet" href="float.css"&gt;</code></pre>
+      
+      <h2 id="usage">🧩 Usage Example</h2>
+      <div class="demo-row">
+        <div circle gradient-4 spin style="width:100px;height:100px;">spin</div>
+        <div star gradient-2 pulse style="width:100px;height:100px;">pulse</div>
+        <div heart gradient-5 bounce style="width:100px;height:100px;">bounce</div>
+      </div>
+      <pre><code>&lt;div circle gradient-4 spin style="width:100px;height:100px;"&gt;spin&lt;/div&gt;
+&lt;div star gradient-2 pulse style="width:100px;height:100px;"&gt;pulse&lt;/div&gt;
+&lt;div heart gradient-5 bounce style="width:100px;height:100px;"&gt;bounce&lt;/div&gt;
+</code></pre>
+      <div class="demo-row">
+        <button btn="purple" hover-1>Purple</button>
+        <button btn="gold" hover-2>Gold</button>
+        <button btn="flamingo" hover-3>Flamingo</button>
+        <button btn="blue" hover-4>Blue</button>
+      </div>
+      <pre><code>&lt;button btn="purple" hover-1&gt;Purple&lt;/button&gt;
+&lt;button btn="gold" hover-2&gt;Gold&lt;/button&gt;
+&lt;button btn="flamingo" hover-3&gt;Flamingo&lt;/button&gt;
+&lt;button btn="blue" hover-4&gt;Blue&lt;/button&gt;
+</code></pre>
+
+      <h2 id="shapes">🎨 Shapes</h2>
+      <div class="element-demo">
+        <div circle gradient-4 style="width:80px;height:80px;">circle</div>
+        <div ellipse gradient-2 style="width:100px;height:60px;">ellipse</div>
+        <div triangle gradient-5 style="width:80px;height:80px;">triangle</div>
+        <div square gradient-3 style="width:80px;height:80px;">square</div>
+        <div rectangle gradient-6 style="width:120px;height:60px;">rectangle</div>
+        <div diamond gradient-7 style="width:80px;height:80px;">diamond</div>
+        <div hexagon gradient-8 style="width:90px;height:80px;">hexagon</div>
+        <div parallelogram gradient-9 style="width:100px;height:60px;">para</div>
+        <div star gradient-1 style="width:80px;height:80px;">star</div>
+        <div trapezoid gradient-10 style="width:100px;height:60px;">trapezoid</div>
+        <div sharp gradient-2 style="width:80px;height:80px;">sharp</div>
+        <div wave gradient-3 style="width:100px;height:60px;">wave</div>
+        <div home gradient-4 style="width:80px;height:80px;">home</div>
+        <div mobile gradient-5 style="width:60px;height:100px;">mobile</div>
+        <div tv gradient-6 style="width:100px;height:70px;">tv</div>
+        <div slope gradient-7 style="width:100px;height:60px;">slope</div>
+        <div heart gradient-8 style="width:80px;height:80px;">heart</div>
+        <div broken gradient-9 style="width:80px;height:80px;">broken</div>
+      </div>
+      <pre><code>&lt;div circle&gt;&lt;/div&gt;
+&lt;div ellipse&gt;&lt;/div&gt;
+&lt;div triangle&gt;&lt;/div&gt;
+&lt;div square&gt;&lt;/div&gt;
+&lt;div rectangle&gt;&lt;/div&gt;
+&lt;div diamond&gt;&lt;/div&gt;
+&lt;div hexagon&gt;&lt;/div&gt;
+&lt;div parallelogram&gt;&lt;/div&gt;
+&lt;div star&gt;&lt;/div&gt;
+&lt;div trapezoid&gt;&lt;/div&gt;
+&lt;div sharp&gt;&lt;/div&gt;
+&lt;div wave&gt;&lt;/div&gt;
+&lt;div home&gt;&lt;/div&gt;
+&lt;div mobile&gt;&lt;/div&gt;
+&lt;div tv&gt;&lt;/div&gt;
+&lt;div slope&gt;&lt;/div&gt;
+&lt;div heart&gt;&lt;/div&gt;
+&lt;div broken&gt;&lt;/div&gt;
+</code></pre>
+
+      <h2 id="animations">✨ Animations</h2>
+      <div class="element-demo">
+        <div circle gradient-4 spin style="width:80px;height:80px;">spin</div>
+        <div square gradient-2 bounce style="width:80px;height:80px;">bounce</div>
+        <div diamond gradient-5 pulse style="width:80px;height:80px;">pulse</div>
+        <div star gradient-3 swing style="width:80px;height:80px;">swing</div>
+        <div ellipse gradient-6 fadein style="width:100px;height:60px;">fadein</div>
+        <div hexagon gradient-7 flip style="width:90px;height:80px;">flip</div>
+        <div parallelogram gradient-8 shake style="width:100px;height:60px;">shake</div>
+        <div heart gradient-9 grow style="width:80px;height:80px;">grow</div>
+        <div rectangle gradient-10 shrink style="width:120px;height:60px;">shrink</div>
+        <div tv gradient-1 slide-x style="width:100px;height:70px;">slide-x</div>
+        <div mobile gradient-2 slide-y style="width:60px;height:100px;">slide-y</div>
+      </div>
+      <pre><code>&lt;div circle spin&gt;&lt;/div&gt;
+&lt;div square bounce&gt;&lt;/div&gt;
+&lt;div diamond pulse&gt;&lt;/div&gt;
+&lt;div star swing&gt;&lt;/div&gt;
+&lt;div ellipse fadein&gt;&lt;/div&gt;
+&lt;div hexagon flip&gt;&lt;/div&gt;
+&lt;div parallelogram shake&gt;&lt;/div&gt;
+&lt;div heart grow&gt;&lt;/div&gt;
+&lt;div rectangle shrink&gt;&lt;/div&gt;
+&lt;div tv slide-x&gt;&lt;/div&gt;
+&lt;div mobile slide-y&gt;&lt;/div&gt;
+</code></pre>
+
+      <h2 id="gradients">🌈 Gradients</h2>
+      <div class="element-demo">
+        <div gradient-1 style="width:100px;height:40px;">1</div>
+        <div gradient-2 style="width:100px;height:40px;">2</div>
+        <div gradient-3 style="width:100px;height:40px;">3</div>
+        <div gradient-4 style="width:100px;height:40px;">4</div>
+        <div gradient-5 style="width:100px;height:40px;">5</div>
+        <div gradient-6 style="width:100px;height:40px;">6</div>
+        <div gradient-7 style="width:100px;height:40px;">7</div>
+        <div gradient-8 style="width:100px;height:40px;">8</div>
+        <div gradient-9 style="width:100px;height:40px;">9</div>
+        <div gradient-10 style="width:100px;height:40px;">10</div>
+      </div>
+      <pre><code>&lt;div gradient-1&gt;&lt;/div&gt;
+&lt;div gradient-2&gt;&lt;/div&gt;
+...
+&lt;div gradient-10&gt;&lt;/div&gt;
+</code></pre>
+
+      <h2 id="hover">🖱️ Hover Effects</h2>
+      <div class="element-demo">
+        <div circle hover-1 style="width:80px;height:80px;background:#ffd600;">hover-1</div>
+        <div square hover-2 style="width:80px;height:80px;background:#43e97b;">hover-2</div>
+        <div diamond hover-3 style="width:80px;height:80px;background:#ff1744;">hover-3</div>
+        <div star morph-hover="circle" style="width:80px;height:80px;background:#43e97b;">morph</div>
+      </div>
+      <pre><code>&lt;div circle hover-1&gt;&lt;/div&gt;
+&lt;div square hover-2&gt;&lt;/div&gt;
+&lt;div diamond hover-3&gt;&lt;/div&gt;
+&lt;div star morph-hover="circle"&gt;&lt;/div&gt;
+</code></pre>
+
+      <h2 id="rotations">🔄 Rotations</h2>
+      <div class="element-demo">
+        <div square rotate-45 style="width:80px;height:80px;background:#ff1744;">45°</div>
+        <div diamond rotate-90 style="width:80px;height:80px;background:#43e97b;">90°</div>
+        <div star rotate-180 style="width:80px;height:80px;background:#ffd600;">180°</div>
+      </div>
+      <pre><code>&lt;div square rotate-45&gt;&lt;/div&gt;
+&lt;div diamond rotate-90&gt;&lt;/div&gt;
+&lt;div star rotate-180&gt;&lt;/div&gt;
+</code></pre>
+
+      <h2 id="buttons">🔘 Buttons</h2>
+      <div class="element-demo">
+        <button btn="purple" hover-1>Purple</button>
+        <button btn="gold" hover-2>Gold</button>
+        <button btn="flamingo" hover-3>Flamingo</button>
+        <button btn="blue" hover-4>Blue</button>
+      </div>
+      <pre><code>&lt;button btn="purple"&gt;Purple&lt;/button&gt;
+&lt;button btn="gold"&gt;Gold&lt;/button&gt;
+&lt;button btn="flamingo"&gt;Flamingo&lt;/button&gt;
+&lt;button btn="blue"&gt;Blue&lt;/button&gt;
+</code></pre>
+
+      <h2 id="cards">🃏 Cards</h2>
+      <div class="element-demo">
+        <div card gradient-4 style="width:180px;height:100px;flex-direction:column;align-items:center;justify-content:center;display:flex;">
+          <h4 style="margin:0;color:#fff;">Card Title</h4>
+          <p style="margin:0;color:#fff;font-size:0.95em;">Card content here.</p>
+        </div>
+      </div>
+      <pre><code>&lt;div card gradient-4&gt;
+  &lt;h4&gt;Card Title&lt;/h4&gt;
+  &lt;p&gt;Card content here.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <h2 id="flex">📐 Flex & Layout</h2>
+      <div class="element-demo">
+        <div flex-row style="height:100px;width:220px;gap:1em;background:#f3eaff;border-radius:1em;">
+          <div card style="width:80px;height:80px;">Left</div>
+          <div card style="width:80px;height:80px;">Right</div>
+        </div>
+      </div>
+      <pre><code>&lt;div flex-row style="height:100px;"&gt;
+  &lt;div card&gt;Left&lt;/div&gt;
+  &lt;div card&gt;Right&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <h2 id="combine">🧑‍💻 Combine Attributes</h2>
+      <div class="element-demo">
+        <div card gradient-2 hover-4 rotate-10 pulse style="width:180px;height:100px;flex-direction:column;align-items:center;justify-content:center;display:flex;">
+          <h4 style="margin:0;color:#fff;">Wow!</h4>
+          <button btn="gold" hover-1>Click Me</button>
+        </div>
+      </div>
+      <pre><code>&lt;div card gradient-2 hover-4 rotate-10 pulse&gt;
+  &lt;h4&gt;Wow!&lt;/h4&gt;
+  &lt;button btn="gold" hover-1&gt;Click Me&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <h2 id="license">📦 License</h2>
+      <p>MIT</p>
+    </div>
+  </div>
+  <footer id="contacts">
+    <h2>Contacts</h2>
+    <p><i class="bi bi-geo-alt-fill"></i> Alexandria, Egypt, Earth</p>
+    <p><i class="bi bi-telephone-fill"></i> 01227338290</p>
+    <p><i class="bi bi-browser-chrome"></i> float.com</p>
+    <hr style="opacity:0.2;">
+    <p style="opacity:0.6;">developed with ❤ by amr kilany</p>
+    <div>
+      <i class="bi bi-whatsapp me-3 ms-3"></i>
+      <i class="bi bi-facebook me-2"></i>
+      <i class="bi bi-instagram me-3"></i>
+      <i class="bi bi-youtube me-2"></i>
+    </div>
+    <p style="opacity:0.5">built 18/6/2025</p>
+  </footer>
+  <script>
+    // Smooth scroll for anchor links and highlight active
+    document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+          this.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

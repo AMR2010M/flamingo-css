@@ -1,0 +1,1058 @@
+[bg='auto']{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+[glow]{
+    box-shadow: inset 0 0 30px linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgb(0, 0, 0));
+}
+[circle]{
+     clip-path: circle(50% at 50% 50%);
+}
+[triangle]{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+[ellipse]{
+    clip-path: ellipse(50% 25% at 50% 50%);
+}
+/* ...existing code... */
+
+[square] {
+    clip-path: inset(0);
+}
+
+[rectangle] {
+    clip-path: inset(10% 0 10% 0);
+}
+
+[diamond] {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+[hexagon] {
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+[parallelogram] {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+[star] {
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+
+[trapezoid] {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+
+[sharp]{
+    clip-path: polygon(0% 30%, 5% 23%, 12% 32%, 20% 22%, 25% 30%, 33% 16%, 33% 27%, 43% 20%, 48% 29%, 67% 23%, 70% 32%, 80% 26%, 85% 30%, 95% 27%, 97% 33%, 98% 98%, 3% 97%);
+}
+/* Wave shape */
+[wave] {
+  clip-path: polygon(
+    0% 60%, 10% 65%, 20% 60%, 30% 65%, 40% 60%, 50% 65%,
+    60% 60%, 70% 65%, 80% 60%, 90% 65%, 100% 60%, 100% 100%, 0% 100%
+  );
+}
+
+/* Home (classic house) */
+[home] {
+  clip-path: polygon(
+    50% 0%, 100% 40%, 100% 100%, 0% 100%, 0% 40%
+  );
+}
+
+/* Mobile phone */
+[mobile] {
+height: 450px;
+width: 300px;
+border-radius: 10px;
+
+}
+
+/* TV */
+[tv] {
+  clip-path: polygon(
+    10% 10%, 90% 10%, 90% 80%, 70% 80%, 80% 100%, 50% 90%, 20% 100%, 30% 80%, 10% 80%
+  );
+}
+
+/* Sloping parallelogram */
+[slope] {
+  clip-path: polygon(
+    20% 0%, 100% 0%, 80% 100%, 0% 100%
+  );
+}
+
+/* Heart */
+[heart] {
+    
+  clip-path: polygon(
+    50% 80%, 0% 40%, 10% 15%, 35% 0%, 50% 15%, 65% 0%, 90% 15%, 100% 40%
+  );
+ 
+}
+
+/* Spin animation */
+[spin] {
+  animation: float-spin 2s linear infinite;
+}
+@keyframes float-spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Bounce animation */
+[bounce] {
+  animation: float-bounce 1s cubic-bezier(.5,0.05,1,.5) infinite alternate;
+}
+@keyframes float-bounce {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-30px); }
+}
+
+/* Pulse animation */
+[pulse] {
+  animation: float-pulse 1.2s ease-in-out infinite;
+}
+@keyframes float-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.1); opacity: 0.7; }
+}
+
+/* Wiggle animation */
+[swing] {
+  animation: float-wiggle 0.5s ease-in-out infinite alternate;
+}
+@keyframes float-wiggle {
+  0%   { transform: rotate(-5deg); }
+  100% { transform: rotate(5deg); }
+}
+
+/* Fade-in animation */
+[fadein] {
+  animation: float-fadein 1.2s ease;
+}
+@keyframes float-fadein {
+  from { opacity: 0; transform: translateY(40px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+/* Flip animation */
+[flip] {
+  animation: float-flip 1.2s cubic-bezier(.4,2,.6,.8) infinite alternate;
+  transform-style: preserve-3d;
+}
+@keyframes float-flip {
+  0%   { transform: rotateY(0deg);}
+  100% { transform: rotateY(180deg);}
+}
+
+/* Shake animation */
+[shake] {
+  animation: float-shake 0.5s linear infinite;
+}
+@keyframes float-shake {
+  0%, 100% { transform: translateX(0);}
+  20% { transform: translateX(-8px);}
+  40% { transform: translateX(8px);}
+  60% { transform: translateX(-8px);}
+  80% { transform: translateX(8px);}
+}
+
+/* Grow animation */
+[grow] {
+  animation: float-grow 1.5s ease-in-out infinite alternate;
+}
+@keyframes float-grow {
+  0%   { transform: scale(1);}
+  100% { transform: scale(1.2);}
+}
+
+/* Shrink animation */
+[shrink] {
+  animation: float-shrink 1.5s ease-in-out infinite alternate;
+}
+@keyframes float-shrink {
+  0%   { transform: scale(1);}
+  100% { transform: scale(0.8);}
+}
+
+/* Slide left and right */
+[slide-x] {
+  animation: float-slide-x 2s ease-in-out infinite alternate;
+}
+@keyframes float-slide-x {
+  0%   { transform: translateX(0);}
+  100% { transform: translateX(40px);}
+}
+
+/* Slide up and down */
+[slide-y] {
+  animation: float-slide-y 2s ease-in-out infinite alternate;
+}
+@keyframes float-slide-y {
+  0%   { transform: translateY(0);}
+  100% { transform: translateY(40px);}
+}
+/* 10 modern gradients as attributes */
+[gradient-1] { background: linear-gradient(135deg, #6600FF 0%, #FF6FD8 100%); }
+[gradient-2] { background: linear-gradient(120deg, #43e97b 0%, #38f9d7 100%); }
+[gradient-3] { background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); }
+[gradient-4] { background: linear-gradient(135deg, #f953c6 0%, #b91d73 100%); }
+[gradient-5] { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
+[gradient-6] { background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%); }
+[gradient-7] { background: linear-gradient(135deg, #ee9ca7 0%, #ffdde1 100%); }
+[gradient-8] { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
+[gradient-9] { background: linear-gradient(135deg, #6600ff 0%, #c6e8f8 100%); }
+[gradient-10] { background: linear-gradient(135deg, #ffffff 0%, #00c3ff 100%); }
+[morph-hover="star"]:hover {
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%,
+    79% 91%, 50% 70%, 21% 91%, 32% 57%,
+    2% 35%, 39% 35%
+  );
+  transition: clip-path 0.5s;
+}
+/* 1. Scale up */
+[hover-1]:hover { transform: scale(1.08); transition: 0.3s; }
+/* 2. Scale down */
+[hover-2]:hover { transform: scale(0.92); transition: 0.3s; }
+/* 3. Rotate */
+[hover-3]:hover { transform: rotate(8deg); transition: 0.3s; }
+/* 4. Shadow pop */
+[hover-4]:hover { box-shadow: 0 8px 32px #6600ff44; transition: 0.3s; }
+/* 5. Glow */
+[hover-5]:hover { box-shadow: 0 0 24px 8px #ff6fd8; transition: 0.3s; }
+/* 6. Border color */
+[hover-6]:hover { border: 2px solid #6600ff; transition: 0.3s; }
+/* 7. Gradient background */
+[hover-7]:hover { background: linear-gradient(135deg, #43e97b, #38f9d7); transition: 0.3s; }
+/* 8. Blur */
+[hover-8]:hover { filter: blur(2px); transition: 0.3s; }
+/* 9. Skew */
+[hover-9]:hover { transform: skew(-10deg, 2deg); transition: 0.3s; }
+/* 10. Opacity */
+[hover-10]:hover { opacity: 0.7; transition: 0.3s; }
+/* 11. Pulse */
+[hover-11]:hover { animation: float-pulse 0.8s; }
+/* 12. Wiggle */
+[hover-12]:hover { animation: float-wiggle 0.5s; }
+/* 13. Bounce */
+[hover-13]:hover { animation: float-bounce 0.7s; }
+/* 14. Flip */
+[hover-14]:hover { transform: rotateY(180deg); transition: 0.5s; }
+/* 15. Slide right */
+[hover-15]:hover { transform: translateX(20px); transition: 0.3s; }
+/* 16. Slide left */
+[hover-16]:hover { transform: translateX(-20px); transition: 0.3s; }
+/* 17. Slide up */
+[hover-17]:hover { transform: translateY(-20px); transition: 0.3s; }
+/* 18. Slide down */
+[hover-18]:hover { transform: translateY(20px); transition: 0.3s; }
+/* 19. Text color */
+[hover-19]:hover { color: #ff6fd8; transition: 0.3s; }
+/* 20. Shadow inset */
+[hover-20]:hover { box-shadow: inset 0 0 24px #6600ff88; transition: 0.3s; }
+/* 21. Border radius */
+[hover-21]:hover { border-radius: 50px; transition: 0.3s; }
+/* 22. Grayscale */
+[hover-22]:hover { filter: grayscale(1); transition: 0.3s; }
+/* 23. Saturate */
+[hover-23]:hover { filter: saturate(2); transition: 0.3s; }
+/* 24. Hue rotate */
+[hover-24]:hover { filter: hue-rotate(90deg); transition: 0.3s; }
+/* 25. Shadow neon */
+[hover-25]:hover { box-shadow: 0 0 32px 8px #00fff7; transition: 0.3s; }
+/* 26. Border dashed */
+[hover-26]:hover { border: 2px dashed #ff6fd8; transition: 0.3s; }
+/* 27. Border dotted */
+[hover-27]:hover { border: 2px dotted #43e97b; transition: 0.3s; }
+/* 28. Glass effect */
+[hover-28]:hover { background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); transition: 0.3s; }
+/* 29. Shadow color */
+[hover-29]:hover { box-shadow: 0 8px 32px #ffd20088; transition: 0.3s; }
+/* 30. Morph to star (for any shape) */
+[morph-hover="star"]:hover {
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%,
+    79% 91%, 50% 70%, 21% 91%, 32% 57%,
+    2% 35%, 39% 35%
+  );
+  transition: clip-path 0.5s;
+}
+
+/* Example: morph to circle */
+[morph-hover="circle"]:hover {
+  clip-path: circle(50% at 50% 50%);
+  transition: clip-path 0.5s;
+}
+
+/* Example: morph to hexagon */
+[morph-hover="hexagon"]:hover {
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  transition: clip-path 0.5s;
+}
+
+/* Example: morph to diamond */
+[morph-hover="diamond"]:hover {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transition: clip-path 0.5s;
+}
+/* Card component */
+[card] {
+  display: block;
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+  background: #fff;
+  box-shadow: 0 4px 24px #6600ff22;
+  max-width: 350px;
+  margin: 2rem auto;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+[card][gradient-4] { color: #fff; }
+[card]:hover { box-shadow: 0 8px 32px #6600ff44; transform: translateY(-8px) scale(1.03); }
+
+/* Button component */
+[button] {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  background: #6600ff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+[button][gradient-2] { color: #222; }
+[button]:hover { background: #ff6fd8; transform: scale(1.07); }
+
+/* Badge component */
+[broken]{
+    clip-path: polygon(20% 87%, 10% 84%, 3% 84%, 0% 71%, 5% 58%, 4% 49%, 10% 41%, 8% 36%, 8% 36%, 15% 35%, 22% 30%, 29% 36%, 36% 27%, 40% 34%, 44% 36%, 49% 34%, 50% 36%, 55% 35%, 62% 30%, 65% 35%, 70% 46%, 73% 56%, 70% 70%, 60% 80%, 44% 89%, 35% 85%, 26% 87%);
+}
+
+[rotate-45]   { transform: rotate(45deg); }
+[rotate-46]   { transform: rotate(46deg); }
+[rotate-47]   { transform: rotate(47deg); }
+[rotate-48]   { transform: rotate(48deg); }
+[rotate-49]   { transform: rotate(49deg); }
+[rotate-50]   { transform: rotate(50deg); }
+[rotate-51]   { transform: rotate(51deg); }
+[rotate-52]   { transform: rotate(52deg); }
+[rotate-53]   { transform: rotate(53deg); }
+[rotate-54]   { transform: rotate(54deg); }
+[rotate-55]   { transform: rotate(55deg); }
+[rotate-56]   { transform: rotate(56deg); }
+[rotate-57]   { transform: rotate(57deg); }
+[rotate-58]   { transform: rotate(58deg); }
+[rotate-59]   { transform: rotate(59deg); }
+[rotate-60]   { transform: rotate(60deg); }
+[rotate-61]   { transform: rotate(61deg); }
+[rotate-62]   { transform: rotate(62deg); }
+[rotate-63]   { transform: rotate(63deg); }
+[rotate-64]   { transform: rotate(64deg); }
+[rotate-65]   { transform: rotate(65deg); }
+[rotate-66]   { transform: rotate(66deg); }
+[rotate-67]   { transform: rotate(67deg); }
+[rotate-68]   { transform: rotate(68deg); }
+[rotate-69]   { transform: rotate(69deg); }
+[rotate-70]   { transform: rotate(70deg); }
+[rotate-71]   { transform: rotate(71deg); }
+[rotate-72]   { transform: rotate(72deg); }
+[rotate-73]   { transform: rotate(73deg); }
+[rotate-74]   { transform: rotate(74deg); }
+[rotate-75]   { transform: rotate(75deg); }
+[rotate-76]   { transform: rotate(76deg); }
+[rotate-77]   { transform: rotate(77deg); }
+[rotate-78]   { transform: rotate(78deg); }
+[rotate-79]   { transform: rotate(79deg); }
+[rotate-80]   { transform: rotate(80deg); }
+[rotate-81]   { transform: rotate(81deg); }
+[rotate-82]   { transform: rotate(82deg); }
+[rotate-83]   { transform: rotate(83deg); }
+[rotate-84]   { transform: rotate(84deg); }
+[rotate-85]   { transform: rotate(85deg); }
+[rotate-86]   { transform: rotate(86deg); }
+[rotate-87]   { transform: rotate(87deg); }
+[rotate-88]   { transform: rotate(88deg); }
+[rotate-89]   { transform: rotate(89deg); }
+[rotate-90]   { transform: rotate(90deg); }
+[rotate-91]   { transform: rotate(91deg); }
+[rotate-92]   { transform: rotate(92deg); }
+[rotate-93]   { transform: rotate(93deg); }
+[rotate-94]   { transform: rotate(94deg); }
+[rotate-95]   { transform: rotate(95deg); }
+[rotate-96]   { transform: rotate(96deg); }
+[rotate-97]   { transform: rotate(97deg); }
+[rotate-98]   { transform: rotate(98deg); }
+[rotate-99]   { transform: rotate(99deg); }
+[rotate-100]  { transform: rotate(100deg); }
+[rotate-101]  { transform: rotate(101deg); }
+[rotate-102]  { transform: rotate(102deg); }
+[rotate-103]  { transform: rotate(103deg); }
+[rotate-104]  { transform: rotate(104deg); }
+[rotate-105]  { transform: rotate(105deg); }
+[rotate-106]  { transform: rotate(106deg); }
+[rotate-107]  { transform: rotate(107deg); }
+[rotate-108]  { transform: rotate(108deg); }
+[rotate-109]  { transform: rotate(109deg); }
+[rotate-110]  { transform: rotate(110deg); }
+[rotate-111]  { transform: rotate(111deg); }
+[rotate-112]  { transform: rotate(112deg); }
+[rotate-113]  { transform: rotate(113deg); }
+[rotate-114]  { transform: rotate(114deg); }
+[rotate-115]  { transform: rotate(115deg); }
+[rotate-116]  { transform: rotate(116deg); }
+[rotate-117]  { transform: rotate(117deg); }
+[rotate-118]  { transform: rotate(118deg); }
+[rotate-119]  { transform: rotate(119deg); }
+[rotate-120]  { transform: rotate(120deg); }
+[rotate-121]  { transform: rotate(121deg); }
+[rotate-122]  { transform: rotate(122deg); }
+[rotate-123]  { transform: rotate(123deg); }
+[rotate-124]  { transform: rotate(124deg); }
+[rotate-125]  { transform: rotate(125deg); }
+[rotate-126]  { transform: rotate(126deg); }
+[rotate-127]  { transform: rotate(127deg); }
+[rotate-128]  { transform: rotate(128deg); }
+[rotate-129]  { transform: rotate(129deg); }
+[rotate-130]  { transform: rotate(130deg); }
+[rotate-131]  { transform: rotate(131deg); }
+[rotate-132]  { transform: rotate(132deg); }
+[rotate-133]  { transform: rotate(133deg); }
+[rotate-134]  { transform: rotate(134deg); }
+[rotate-135]  { transform: rotate(135deg); }
+[rotate-136]  { transform: rotate(136deg); }
+[rotate-137]  { transform: rotate(137deg); }
+[rotate-138]  { transform: rotate(138deg); }
+[rotate-139]  { transform: rotate(139deg); }
+[rotate-140]  { transform: rotate(140deg); }
+[rotate-141]  { transform: rotate(141deg); }
+[rotate-142]  { transform: rotate(142deg); }
+[rotate-143]  { transform: rotate(143deg); }
+[rotate-144]  { transform: rotate(144deg); }
+[rotate-145]  { transform: rotate(145deg); }
+[rotate-146]  { transform: rotate(146deg); }
+[rotate-147]  { transform: rotate(147deg); }
+[rotate-148]  { transform: rotate(148deg); }
+[rotate-149]  { transform: rotate(149deg); }
+[rotate-150]  { transform: rotate(150deg); }
+[rotate-151]  { transform: rotate(151deg); }
+[rotate-152]  { transform: rotate(152deg); }
+[rotate-153]  { transform: rotate(153deg); }
+[rotate-154]  { transform: rotate(154deg); }
+[rotate-155]  { transform: rotate(155deg); }
+[rotate-156]  { transform: rotate(156deg); }
+[rotate-157]  { transform: rotate(157deg); }
+[rotate-158]  { transform: rotate(158deg); }
+[rotate-159]  { transform: rotate(159deg); }
+[rotate-160]  { transform: rotate(160deg); }
+[rotate-161]  { transform: rotate(161deg); }
+[rotate-162]  { transform: rotate(162deg); }
+[rotate-163]  { transform: rotate(163deg); }
+[rotate-164]  { transform: rotate(164deg); }
+[rotate-165]  { transform: rotate(165deg); }
+[rotate-166]  { transform: rotate(166deg); }
+[rotate-167]  { transform: rotate(167deg); }
+[rotate-168]  { transform: rotate(168deg); }
+[rotate-169]  { transform: rotate(169deg); }
+[rotate-170]  { transform: rotate(170deg); }
+[rotate-171]  { transform: rotate(171deg); }
+[rotate-172]  { transform: rotate(172deg); }
+[rotate-173]  { transform: rotate(173deg); }
+[rotate-174]  { transform: rotate(174deg); }
+[rotate-175]  { transform: rotate(175deg); }
+[rotate-176]  { transform: rotate(176deg); }
+[rotate-177]  { transform: rotate(177deg); }
+[rotate-178]  { transform: rotate(178deg); }
+[rotate-179]  { transform: rotate(179deg); }
+[rotate-180]  { transform: rotate(180deg); }
+/* Rotate attribute utilities: [rotate-1] to [rotate-45] */
+[rotate-1]   { transform: rotate(1deg); }
+[rotate-2]   { transform: rotate(2deg); }
+[rotate-3]   { transform: rotate(3deg); }
+[rotate-4]   { transform: rotate(4deg); }
+[rotate-5]   { transform: rotate(5deg); }
+[rotate-6]   { transform: rotate(6deg); }
+[rotate-7]   { transform: rotate(7deg); }
+[rotate-8]   { transform: rotate(8deg); }
+[rotate-9]   { transform: rotate(9deg); }
+[rotate-10]  { transform: rotate(10deg); }
+[rotate-11]  { transform: rotate(11deg); }
+[rotate-12]  { transform: rotate(12deg); }
+[rotate-13]  { transform: rotate(13deg); }
+[rotate-14]  { transform: rotate(14deg); }
+[rotate-15]  { transform: rotate(15deg); }
+[rotate-16]  { transform: rotate(16deg); }
+[rotate-17]  { transform: rotate(17deg); }
+[rotate-18]  { transform: rotate(18deg); }
+[rotate-19]  { transform: rotate(19deg); }
+[rotate-20]  { transform: rotate(20deg); }
+[rotate-21]  { transform: rotate(21deg); }
+[rotate-22]  { transform: rotate(22deg); }
+[rotate-23]  { transform: rotate(23deg); }
+[rotate-24]  { transform: rotate(24deg); }
+[rotate-25]  { transform: rotate(25deg); }
+[rotate-26]  { transform: rotate(26deg); }
+[rotate-27]  { transform: rotate(27deg); }
+[rotate-28]  { transform: rotate(28deg); }
+[rotate-29]  { transform: rotate(29deg); }
+[rotate-30]  { transform: rotate(30deg); }
+[rotate-31]  { transform: rotate(31deg); }
+[rotate-32]  { transform: rotate(32deg); }
+[rotate-33]  { transform: rotate(33deg); }
+[rotate-34]  { transform: rotate(34deg); }
+[rotate-35]  { transform: rotate(35deg); }
+[rotate-36]  { transform: rotate(36deg); }
+[rotate-37]  { transform: rotate(37deg); }
+[rotate-38]  { transform: rotate(38deg); }
+[rotate-39]  { transform: rotate(39deg); }
+[rotate-40]  { transform: rotate(40deg); }
+[rotate-41]  { transform: rotate(41deg); }
+[rotate-42]  { transform: rotate(42deg); }
+[rotate-43]  { transform: rotate(43deg); }
+[rotate-44]  { transform: rotate(44deg); }
+[rotate-45]  { transform: rotate(45deg); }
+[btn='purple']{
+    
+ background-color: rgb(144, 0, 255);
+    font-size:20px;
+    color: #fff;
+    box-shadow: 0 4px 24px rgba(144, 0, 255, 0.2);
+   width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 12px;
+}
+[center]{
+ align-self: center;
+ justify-self: center;
+    
+}
+[flex-row]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+flex-direction: row;
+}
+[flex-column]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+flex-direction: column;
+}
+[btn='blue'] {
+  background-color: #007bff;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #007bff33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='red'] {
+  background-color: #ff1744;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #ff174433;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='green'] {
+  background-color: #00c853;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #00c85333;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='yellow'] {
+  background-color: #ffd600;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #ffd60033;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='orange'] {
+  background-color: #ff9100;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #ff910033;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='pink'] {
+  background-color: #ff6fd8;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #ff6fd833;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='teal'] {
+  background-color: #1de9b6;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #1de9b633;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='cyan'] {
+  background-color: #00e5ff;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #00e5ff33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='indigo'] {
+  background-color: #3f51b5;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #3f51b533;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='deep-purple'] {
+  background-color: #6200ea;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #6200ea33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='lime'] {
+  background-color: #cddc39;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #cddc3933;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='amber'] {
+  background-color: #ffc107;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #ffc10733;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='deep-orange'] {
+  background-color: #ff3d00;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #ff3d0033;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='brown'] {
+  background-color: #795548;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #79554833;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='grey'] {
+  background-color: #757575;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #75757533;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='blue-grey'] {
+  background-color: #607d8b;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #607d8b33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='black'] {
+  background-color: #222;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #22222233;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='white'] {
+  background-color: #fff;
+  font-size: 20px;
+  color: #6600ff;
+  box-shadow: 0 4px 24px #6600ff22;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='silver'] {
+  background-color: #c0c0c0;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #c0c0c033;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='gold'] {
+  background-color: #ffd700;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #ffd70033;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='navy'] {
+  background-color: #001f3f;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #001f3f33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='aqua'] {
+  background-color: #7fdbff;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #7fdbff33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='olive'] {
+  background-color: #3d9970;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #3d997033;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='maroon'] {
+  background-color: #b71c1c;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #b71c1c33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='violet'] {
+  background-color: #8f00ff;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #8f00ff33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='magenta'] {
+  background-color: #e040fb;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #e040fb33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='coral'] {
+  background-color: #ff7f50;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #ff7f5033;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='peach'] {
+  background-color: #ffb074;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #ffb07433;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='mint'] {
+  background-color: #98ff98;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #98ff9833;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='sky'] {
+  background-color: #87ceeb;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #87ceeb33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='rose'] {
+  background-color: #ff007f;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #ff007f33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='plum'] {
+  background-color: #dda0dd;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #dda0dd33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='sand'] {
+  background-color: #f4e2d8;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #f4e2d833;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='lemon'] {
+  background-color: #fff44f;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #fff44f33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='forest'] {
+  background-color: #228b22;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #228b2233;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='sea'] {
+  background-color: #006994;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #00699433;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='wine'] {
+  background-color: #722f37;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #722f3733;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='chocolate'] {
+  background-color: #d2691e;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #d2691e33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='mustard'] {
+  background-color: #ffdb58;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #ffdb5833;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='ice'] {
+  background-color: #e0f7fa;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #e0f7fa33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='lavender'] {
+  background-color: #e6e6fa;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #e6e6fa33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='crimson'] {
+  background-color: #dc143c;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #dc143c33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='azure'] {
+  background-color: #007fff;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #007fff33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='charcoal'] {
+  background-color: #36454f;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #36454f33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='beige'] {
+  background-color: #f5f5dc;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #f5f5dc33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='apricot'] {
+  background-color: #fbceb1;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #fbceb133;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='slate'] {
+  background-color: #708090;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #70809033;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='bronze'] {
+  background-color: #cd7f32;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #cd7f3233;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='clay'] {
+  background-color: #b66a50;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 4px 24px #b66a5033;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
+[btn='flamingo'] {
+  background-color: #fc8eac;
+  font-size: 20px;
+  color: #222;
+  box-shadow: 0 4px 24px #fc8eac33;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px;
+}
